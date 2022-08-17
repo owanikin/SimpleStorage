@@ -1,0 +1,18 @@
+{
+  "name": "package.json",
+  "version": "y",
+  "description": "package",
+  "main": "deploy.js",
+  "repository": "https://github.com/n/a",
+  "author": "Ifeoluwa",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ethers": "^5.6.9",
+    "fs-extra": "^10.1.0",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+}
